@@ -30,6 +30,7 @@ class TopSearch extends StatelessWidget {
           itemBuilder: (context, index) {
             final movie = movies![index];
 
+
            return InkWell(
               onTap: () => Navigator.push(context,MaterialPageRoute(builder: (context) => MovieDetail(id: movie.id,),)),
               child: Container(
